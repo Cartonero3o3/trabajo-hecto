@@ -1,5 +1,5 @@
 const playButton = document.querySelector('.play');
-const buttons = document.querySelectorAll('.card');
+const buttons = document.querySelector('.card');
 let Equipos = ["River", "Boca", "Talleres", "Belgrano"];
 let sequence = [];
 let sequenceLength = 1;
