@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1%;
+    align-items: center;
+}
+
+.container button {
+    width: 10vw; 
+    height: 10vw; 
+    padding: 20%; 
+}
+
+#b1{
+    background-color: red;
+    color: red;
+}
+
+#b2{
+    background-color: yellow;
+    color: yellow;
+}
+
+#b3{
+    background-color: green;
+    color: green;
+}
+
+#b4{
+    background-color: blue;
+    color: blue;
+}
+
+#startButton{
+    padding: 10px 20px;
+    margin-top: 10%;
+    font-size: 20px;
+}
