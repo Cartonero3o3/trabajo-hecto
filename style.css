@@ -1,51 +1,28 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.game{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
+body{
+    background-color: lightseagreen;
+    text-align: center;
+  }
+  
+  .container {  
+    margin-left: 13%;
+    margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 1%;
-    align-items: center;
-}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:0% 0%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+    
+  .card{
+    background-color: rgb(0, 204, 255);
+    max-width: 20%;
+    max-height: 20%;
+    padding: 14.8%;
+    margin-top: 5%;
 
-.container button {
-    width: 10vw; 
-    height: 10vw; 
-    padding: 20%; 
-}
-
-#b1{
-    background-color: red;
-    color: red;
-}
-
-#b2{
-    background-color: yellow;
-    color: yellow;
-}
-
-#b3{
-    background-color: green;
-    color: green;
-}
-
-#b4{
-    background-color: blue;
-    color: blue;
-}
-
-#startButton{
-    padding: 10px 20px;
-    margin-top: 10%;
-    font-size: 20px;
-}
+    transition: opacity 0.5s ease; 
+  }
+  
